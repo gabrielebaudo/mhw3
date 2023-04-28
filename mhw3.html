@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>I migliori 3D Visualizer</title>
+    <link rel="stylesheet" href="mhw3.css"/>
+    <script src="mhw3.js" defer="true"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id = "overlay"></div>
+      <nav>
+        <div id="name">Gabriele Baudo</div>
+        <div id="link">
+          <a>Home</a>
+          <a>Galleria</a>
+          <a>Training</a>
+          <a>Contatti</a>
+        </div>
+        <div id="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+      <a id="header-title">I migliori 3D Visualizer<br>per lighting designer</a>    
+    </header>
+
+    <div id = "info-bar">
+      <img src="./images/user.jpg"/>
+      <p>Gabriele Baudo</p>
+      <p id="description">Lighting Designer and Programmer</p>
+      <div></div>
+    </div>
+
+    <section id="visuals">
+      <div id="intro">
+        <div>In questo articolo vedremo i 3 migliori visualizzatori 3D per lighting designer.<br>Saranno ordinati in base alla loro importanza e notorietà</div>
+        <div id="intro-info">(Cliccando su scopri di più verranno mostrati dei video tutorial sull'utilizzo del programma e delle foto di esempio sui vari scenari di utilizzo)</div>
+      </div>
+
+      <article>
+        <span class="number">1.</span>
+        <div class="container">
+          <h1>Capture</h1>
+          <h2>Voto: 9</h2>
+          <p>E' uno dei visualizzatori 3D più popolari nel mondo dello spettacolo.<br>
+            Offre un'interfaccia utente intuitiva e una vasta libreria di oggetti predefiniti. 
+            Accetta inoltre modelli 3d in tutti i principali formati.<br>
+            E' quindi molto semplice creare uno stage model con i software dedicati quali VectorWorks o AutoCAD e poi importarli in Capture.<br>
+            Supporta il protocollo ArtNet, per cui si integra perfettamente con i principali software di gestione DMX. 
+            Tuttavia, le licenze hanno prezzo piuttosto alto (si parte da 300€ per la licenza con un solo universo dmx sbloccato), per cui non lo consiglierei ai neofiti.<br>
+            Il prezzo è comunque piuttosto accessibile per i professionisti, se lo confrontiamo con il suo principale competitor Wysiwyg, che offre licenze a partire da 1000€.
+          </p>
+          <div class="content" data-vis="capture">
+            <img src="./images/capture.jpg"/>
+            <span>Scopri di più</span>
+          </div>
+          
+          </div>
+          
+        </div>
+      </article>
+
+        <article>
+          <span class="number">2.</span>
+          <div class="container">
+            <h1>MA 3D</h1>
+            <h2>Voto: 7.5</h2>
+            <p>E' il visualizzatore di default per tutti i prodotti di marca MA Lighting.<br>
+              E' gratuito, e può tranquillamente essere usato con hardware MA, o con il programa MA OnPc.<br>
+              Può essere anche usato come software stand-alone e pilotato da software DMX esterni, ma è necessario comprare un usb dongle per lo sblocco del software, dal costo di circa 300€.<br>
+              E' un ottimo software per i neofiti, completo e abbastanza realistico. Non supporta la visualizzazione di laser (con nessun protocollo ne Artet ne ILDA) e effetti speciali, inoltre richiede un hardware pittosto potente per simulare correttamente uno show.
+            </p>
+            <div class="content" data-vis="ma3d">
+              <img src="./images/ma3d.jpg"/>
+              <span>Scopri di più</span>
+            </div>
+            
+          </div>
+        </article>
+
+          <article>
+            <span class="number">3.</span>
+            <div class="container">
+              <h1>MagicQ Vis</h1>
+              <h2>Voto: 6</h2>
+              <p>E' visualizzatore 3D gratuito e open-source che si integra con il software MagicQ di Chamsys.<br>
+                È noto per la sua facilità d'uso, interfaccia intuitiva e la possibilità di importare file CAD.<br>
+                Tuttavia, le funzionalità sono molto limitate e la realisticità di simulazione è molto bassa.<br>
+                Nemmeno in questo software possono essere simulati laser ed altri effetti speciali.<br>
+                Inoltre non può essere usato con altri software al di fuori di Chamsys MagicQ, che però è comunque un ottimo software di controllo DMX gratuto e potemnte
+              </p>
+              <div class="content" data-vis="magicvis">
+                <img src="./images/magicvis.jpg"/>
+                <span>Scopri di più</span>
+              </div>
+              
+            </div>
+          </article>
+    </section>
+
+    <section id="contents" class = "hidden">
+      <p>Tutorial YouTube</p>
+      <div id = "video-container"></div>
+      <p>Potenzialità del software</p>
+      <div id = "image-container"></div>
+      <span id="back">Torna Indietro</span>
+    </section>
+
+    <section id = "modal-view" class="hidden"></section>
+    
+    <footer>
+      <p>Powered by Gabriele Baudo<br>ID Number: 1000016055</p>
+      <p>Web Programming Course 2023</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,528 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 0.6px;
+    color: white;
+    background-color: rgb(242 , 245, 248);
+    margin: 0px;
+}
+
+/*
+ELEMENTI HEADER (Backgroud, Overlay, Navbar, Title)
+*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 500px;
+
+    background-image: url(./images/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 0, .3);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+
+    background-color: rgba(0, 0, 0, 0.570);
+    height: 12%; 
+}
+
+#link {
+    flex-grow: 1;
+    text-align: right;
+    font-size: 1em;
+    margin-right: 4%; 
+}
+
+#link a {
+    margin: 2%; 
+}
+
+#link a:hover {
+    padding: 2px 0px;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+#link a:active {
+    color: rgb(80, 95, 154);
+    border-color: rgb(80, 95, 154);
+}
+
+#name {
+    margin-left: 4%;
+    font-size: 1.9em;
+}
+
+#header-title {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    max-width: 780px;
+}
+
+/*
+ELEMENTI INFO-BAR (Immagine Utente, Nome, Descrizione, Linea)
+*/
+
+#info-bar  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+#info-bar img {
+    height: 100px;
+    width: 100px;
+    border: 2.5px solid white;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-bottom: 5px;
+    z-index: 2;
+}
+
+#info-bar p {
+    font-size: 1.2em;
+    margin: 4px;
+}
+
+#info-bar #description {
+    font-size: 0.9em;
+}
+
+#info-bar div {
+    background-color: gray;
+    height: 1.5px;
+    width: 30%;
+
+    margin-top: 10px;
+}
+
+/*
+ELEMENTI SEZIONE CONTENUTI
+(Intro, Vari Article)
+*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+
+    margin-top: 60px;
+    margin-bottom: 6%;
+}
+
+#intro {
+    text-align: center;
+    line-height: 150%;
+    width: 66.67%;
+    margin-bottom: -60px;
+}
+
+#intro-info {
+    margin-top: 1.4%;
+    font-size: 0.75em;
+    color: rgb(127, 127, 127);
+    line-height: normal;
+}
+
+
+article {
+    margin-top: 120px;
+    display: flex;
+    width: calc(66.67% + 80px);
+}
+
+.choice {
+    margin-top: 10px;
+}
+
+/*
+ELEMENTI ARTICOLO
+(Numero, Testo, Immagine)
+*/
+
+section .container {
+    display: inline-block;
+}
+
+.number {
+    font-size: 2.5em;
+    color: gray;
+    margin-right: 40px;
+}
+
+article h1 {
+    font-size: 1.8em;
+    margin-bottom: 0px;
+    margin: 0px;
+}
+
+article h2 {
+    color: blue;
+    font-size: 1.2em;
+    margin: 0px
+}
+
+article p {
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    position: relative;
+}
+
+.content span {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: rgb(245, 245, 245);
+    font-size: 1.5em;
+    padding: 12px 23px;
+    border-radius: 30px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.content span:hover {
+    background-color: rgba(245, 245, 245, 0.75);
+}
+
+.content span:active {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+/*
+ELEMENTI DINAMICI
+(Numero, Testo, Immagine)
+*/
+
+#contents {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+
+#contents p {
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#video-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+
+
+iframe {
+    width: 30%;
+    aspect-ratio: 16/9;
+    margin-top: 50px;
+}
+
+#image-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: -20px;
+}
+
+.wrap {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.imgur {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+}
+
+.img-desc {
+    margin-top: 10px;
+}
+
+#back {
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+#back:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+#back:active {
+    background-color: rgba(0, 0, 0, 1);
+    border-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+#modal-view {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+  
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #modal-view.hidden {
+    display: none;
+  }
+
+  #modal-view img {
+    max-height: 80%;
+    max-width: 80%;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+
+/*
+FOOTER
+(Info Utente, Info Corso)
+*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgba(0, 0, 0, 0.750);
+    height: 80px;
+}
+
+footer p {
+    margin: 40px;
+    line-height: 140%;
+}
+
+/*
+ELEMENTI VERSIONE MOBILE
+(Nascosti di default)
+*/
+#menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+
+    flex-grow: 1;
+    margin-right: 3%;
+}
+
+#menu div {
+    width: 25px;
+    height: 2.2px;
+    background-color: white;
+    margin: 3px;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/*MEDIA QUERY PER MOBILE*/
+
+@media (max-width: 730px) {
+    body {
+        font-size: 10px;
+    }
+
+    #link {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #name{
+        margin-left: 3%;
+        font-size: 2em;
+    }
+
+    header {
+        height: 210px;
+    }
+
+    #header-title {
+        font-size: 2.5em;
+    }
+
+    nav {
+        height: 20%;
+    }
+
+    #user-info img {
+        height: 60px;
+        width: 60px;
+        margin-top: -32px;
+        border: 1.8px solid white;
+    }
+
+    #info-bar p {
+        font-size: 1.6em;
+        margin-top: 0px;
+    }
+
+    #info-bar #description {
+        font-size: 0.9em;
+        margin-top: 2px;
+    }
+
+    #info-bar div {
+        margin-top: 6px;
+        height: 1.2px;
+        width: 54%;
+    }
+
+    section {
+        margin-top: 20px;
+    }
+
+    #intro {
+        font-size: 1.3em;
+        width: 90%;
+        margin-bottom: -30px;
+    }
+
+    article {
+        margin-top: 80px;
+    }
+    
+    .number {
+        font-size: 3.2em;
+        margin-right: 15px;
+        margin-top: -2px;
+    }
+
+    article h1 {
+        font-size: 2.8em;
+    }
+
+    article h2 {
+        margin-top: 2px;
+        font-size: 1.35em;
+    }
+
+    article p {
+        font-size: 1.3em;
+    }
+
+    .content span {
+        font-size: 1.3em;
+        padding: 10px 20px;
+    }
+
+    #contents p {
+        font-size: 2.3em;
+        margin-top: 45px;
+    }
+
+    iframe {
+        width: 45%;
+        aspect-ratio: 16/9;
+        margin-top: 40px;
+    }
+
+    .wrap {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .img-desc {
+        font-size: 1.5em;
+    }
+
+    #modal-view img {
+        max-height: 80%;
+        max-width: 80%;
+    }
+
+    footer {
+        height: 70px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 1.1em;
+        margin: 4px;
+    }
+}
+
+
